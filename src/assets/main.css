@@ -1,0 +1,267 @@
+
+
+
+
+
+          /*/////////// HEADER //////////////*/
+
+          *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* garante que o padding e a borda sejam incluídos na largura total do elemento */
+          }
+
+          /* Estilo do cabeçalho */
+          .header {
+            display: flex;
+            justify-content: space-between; /* espaçamento entre logo e nav */
+            align-items: center; /* alinha verticalmente os itens */
+            background-color: #333;
+            color: red;
+            padding: 40px; /* espaçamento interno CIMA DIREITA BAIXO ESQUERDA;*/
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* sombra */
+          }
+
+          /* Estilo do logo */
+          .logo h1 {
+            padding: 6.5px 0 0 5vw;
+            font-size: 24px; /* tamanho da fonte */
+            font-weight: bold; /* negrito */
+          }
+
+          /* Estilo da navegação */
+          .navegacao ul {
+            list-style: none;
+            display: flex;
+          }
+
+          .navegacao li {
+            margin-left: 20px;
+          }
+
+          .navegacao a {
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+            padding:10px;
+            border-radius: 4px;
+          }
+
+          .navegacao a:hover {
+            background-color: #555;
+          }
+
+          /* Linha de separação */
+
+          .linha {
+            width: 100%; /* largura total */
+            height: 2.5px; /* altura da linha */
+            background-color: red;
+            margin: 0px 0; /* espaçamento superior e inferior */
+          }
+
+
+
+          .divisao {
+            background-color: red;
+            position: relative;  /* para o posicionamento absoluto do pseudo-elemento */
+            width: 2px;
+            height: 40px;  /* altura da linha */
+            margin: 1px;    /* espaçamento superior e inferior */
+          }
+
+
+
+          /* PESQUISA */
+
+          .pesquisa {
+
+            color:black;
+            color: #555;
+            background-color: white;
+            padding: 5px 7vw  5.6px 5vw ; /* espaçamento interno */
+          }
+
+          /*////////////////////////
+
+            SEÇÃO DE APRESENTAÇÃO
+
+          ////////////////////////*/
+
+          section.apresentacao {
+            background-color: #333;
+            color: red;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* sombra */
+          }
+          section.apresentacao h2{
+            padding: 20px 0 20px 5vw;
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            gap: 10px;
+            font-size: 24px;
+          }
+          section.apresentacao a{
+            color: red;
+            text-decoration: none;
+            font-size: 18px;
+            padding:10px ;
+            background-color:#333;
+            border: red 2px solid; /* borda vermelha */
+            border-radius: 4px;
+
+          }
+
+          section.apresentacao div{
+            padding: 20px 0 20px 5vw;
+          }
+
+          section.apresentacao h1{
+
+            padding: 20px 0 0px 5vw;
+            h1 {
+              font-size: 48px;
+            }
+
+            @media (max-width: 768px) {
+              h1 {
+                font-size: 32px;
+              }
+            }
+
+          }
+
+          section.apresentacao p{
+            font-size: 16px;
+            line-height: 1.6; /* bom espaçamento entre linhas */
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            padding: 20px 0 20px 5vw;
+
+          }
+          .linha3{
+            width: 100%; /* largura total */
+            height: 2.5px; /* altura da linha */
+            background-color: red;
+          }
+
+          section.b{
+            background-color: #333;
+            color: #333;
+          }
+          /*////////////////////////
+
+                  REVERCE
+
+          ////////////////////////*/
+
+          .reverce {
+
+            background-color: red;
+            position: relative;  /* para o posicionamento absoluto do pseudo-elemento */
+            width: 2px;
+            height: 100px;  /* altura da linha */
+            margin: 10px;    /* espaçamento superior e inferior */
+          }
+
+
+
+          /*////////////////////////
+
+                  INDICASAO
+
+          ////////////////////////*/
+
+          section.indicacao {
+            background-color: #333;
+            color: red;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* sombra */
+            font-size: 20px;
+
+          }
+          section.indicacao a{
+
+            text-decoration: none;
+            color: red;
+          }
+
+          section.indicacao ul{
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          section.indicacao li{
+
+            list-style: none;
+            margin-left: 20px;
+
+          }
+
+          .sublinhado{
+            width: 100%; /* largura total */
+            height: 2.5px; /* altura da linha */
+            background-color: red;
+          }
+
+          /*////////////////////////
+
+                  COMICS
+
+          ////////////////////////*/
+
+          .comics {
+            background-color: #333;
+            color: red;
+            padding: 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* sombra */ /*box-shadow Ela ajuda a criar profundidade visual, destacando elementos da página*/
+
+          }
+          .comics h1{
+            padding: 20px 0 20px 5vw;
+
+          }
+
+          .comics h1{
+
+            padding: 20px 0 0px 5vw;
+            h1 {
+              font-size: 48px;
+            }
+
+            @media (max-width: 768px) {
+              h1 {
+                font-size: 32px;
+              }
+            }
+
+          }
+
+          .quadrinhos ul{
+            padding: 5vw;
+            list-style: none;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+          }
+
+          .ajuste h3{
+            padding:20px 0 20px 0;
+            font-size: 30px;
+          }
+
+      .ajuste  a {
+        text-decoration: none;
+        color: red;
+        padding: 10px 40px 10px 40px ;
+       border-color: red ;
+
+      }
+
+      .ajuste p{
+
+        padding: 5px 0  20px 0;
+
+      }
