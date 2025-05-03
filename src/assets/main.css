@@ -161,8 +161,8 @@
             background-color:  #1e1e1e;
             color:  #1e1e1e;
           }
-        
-      
+
+
           /*////////////////////////
 
                   REVERCE
@@ -254,7 +254,7 @@
           }
           .ajuste div{
 
-            border-color: #00c3ff  20px solid;
+            border-color: #00c3ff  20px solid; /* borda vermelha */
 
 
           }
@@ -359,3 +359,4 @@
     .social-icons i:hover {
       color: #00c3ff;
     }
+
