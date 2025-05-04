@@ -20,7 +20,7 @@ header {
 
 h1 {
   margin: 0;
-  font-size: 24px;
+  font-size: 20px;
   color: #00c3ff;
   font-size: 40px;
   padding: 20px 0px 20px 0;
@@ -66,7 +66,7 @@ h1 {
 
 }
 .carinho h1{
-  font-size: 50px; /* tamanho da fonte */
+  font-size: 30px; /* tamanho da fonte */
   font-weight: bold; /* negrito */
   padding: 10vw 0 20px 5vw;
 }
@@ -93,7 +93,7 @@ Estilo do carinho
 
 .produtos {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   gap: 15px;
   padding: 30px 5vw;
   background-color: #1e1e1e;
