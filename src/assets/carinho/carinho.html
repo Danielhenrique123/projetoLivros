@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/assets/carinho.css">
+  <script src="https://kit.fontawesome.com/72cccc74f3.js" crossorigin="anonymous"></script>
+  <title>Carrinho</title>
+  <style>
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="botao-voltar">
+      <a href="http://localhost:5173/"><i class="fa-solid fa-right-to-bracket"></i></a>
+    </div>
+    <h1>Carrinho</h1>
+  </header>
+
+  <div class="linha"></div>
+
+  <section class="carinho">
+    <h1>Carinho</h1>
+    <div class="carinhoLista">
+      <nav>
+        <ul>
+          <li>Titulo</li>
+          <li>Quantidade</li>
+          <li>Total</li>
+        </ul>
+      </nav>
+    </div>
+    <div class="linhaRegular"></div>
+  </section>
+
+  <section class="produtos">
+    <div class="produto">
+      <span>Produto A - R$ 10.00</span>
+      <button onclick="adicionarItem('Produto A', 10)">Adicionar</button>
+    </div>
+    <div class="produto">
+      <span>Produto B - R$ 20.00</span>
+      <button onclick="adicionarItem('Produto B', 20)">Adicionar</button>
+    </div>
+    <div class="produto">
+      <span>Produto C - R$ 15.50</span>
+      <button onclick="adicionarItem('Produto C', 15.5)">Adicionar</button>
+    </div>
+  </section>
+
+  <section class="carrinho-items">
+    <h2>Itens no Carrinho</h2>
+    <ul id="itens-carrinho"></ul>
+    <div class="total">Total: R$ <span id="total-carrinho">0.00</span></div>
+  </section>
+
+  <script>
+    const carrinho = [];
+
+    function adicionarItem(nome, preco) {
+      const existente = carrinho.find(item => item.nome === nome);
+      if (existente) {
+        existente.quantidade++;
+      } else {
+        carrinho.push({ nome, preco, quantidade: 1 });
+      }
+      atualizarCarrinho();
+    }
+
+    function atualizarCarrinho() {
+      const lista = document.getElementById('itens-carrinho');
+      const totalSpan = document.getElementById('total-carrinho');
+      lista.innerHTML = '';
+      let total = 0;
+
+      carrinho.forEach(item => {
+        total += item.preco * item.quantidade;
+        const li = document.createElement('li');
+        li.innerHTML = `
+          ${item.nome} x${item.quantidade} - R$ ${(item.preco * item.quantidade).toFixed(2)}
+          <button onclick="removerItem('${item.nome}')">Remover</button>
+        `;
+        lista.appendChild(li);
+      });
+
+      totalSpan.textContent = total.toFixed(2);
+    }
+
+    function removerItem(nome) {
+      const index = carrinho.findIndex(item => item.nome === nome);
+      if (index !== -1) {
+        carrinho.splice(index, 1);
+        atualizarCarrinho();
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+

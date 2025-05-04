@@ -7,6 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/main.css">
+
+
     <title>Muntiverso comics</title>
   </head>
 
@@ -27,11 +29,13 @@
 
       <nav class="navegacao">
         <ul>
-          <li><a href="#">Termos</a></li>
-          <li><a href="#">Equipes </a></li>
-          <li><a href="#">Envios</a></li>
-          <li><a href="#">Devoluções</a></li>
-          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li title="Termos"><a href="#">Termos</a></li>
+          <li title="Equipes"><a href="#">Equipes </a></li>
+          <li title="Envios"><a href="#">Envios</a></li>
+          <li title="Devoluçoes"><a href="#">Devoluções</a></li>
+          <li><a href="http://127.0.0.1:5500/src/assets/carinho/carinho.html"><i
+                class="fa-solid fa-cart-shopping"></i></a></li>
+
 
 
           <div class="divisao"> </div>
@@ -60,13 +64,11 @@
         </div>
 
 
-          <h1>Stanley Martin Lieber</h1>
+        <h1>Stanley Martin Lieber</h1>
 
-
-          <p>O principal autor e editor da Marvel Comics foi Stan Lee (Stanley Martin Lieber), um escritor, editor,
-            produtor e ator norte-americano. Ele é conhecido por ter co-criado muitos dos personagens icônicos da Marvel
-            Comics, como o Homem-Aranha, os X-Men, o Hulk, Thor, o Homem de Ferro e o Quarteto Fantástico. </p>
-
+        <p>
+          Quem é que não conhece Stan Lee? Certamente um dos maiores nomes dos quadrinhos em todos os tempos, até quem nunca leu um gibi na vida sabe que ele foi, durante décadas, a cara da Marvel Comics. Foi também o criador do Homem-Aranha, Quarteto Fantástico, Homem de Ferro, Demolidor, Hulk, Thor, entre tantos outros.
+        </p>
         <div class="botao"><a href="#">Acessar página do autor</a></div>
 
         <!-- //////// FALTA COLOCAR A IMG ///////-->
@@ -120,9 +122,14 @@
                 <p>Robert Kirkman</p>
 
                 <div>
-                  <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i> Compra
-                  </a>
+
+                     <div>
+
+                  <p>Preço- R$ 15.50</p>
+
+                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
+                </div>
                 </div>
               </li>
 
@@ -133,8 +140,13 @@
                 <h3>Guerra civil</h3>
                 <p>Stanley Martin Lieber</p>
 
-                <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Compra</a>
+                <div>
 
+                  <p>Preço- R$ 15.50</p>
+
+                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
+                </div>
               </li>
               <li>
                 <img src="/public/images/images (2).jpeg" alt="#">
@@ -143,7 +155,13 @@
 
                 <p>Stanley Martin Lieber</p>
 
-                <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Compra</a>
+                <div>
+
+                  <p>Preço- R$ 10.00</p>
+
+                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
+                </div>
               </li>
             </Ul>
           </nav>
@@ -163,9 +181,11 @@
                 <p>Robert Kirkman</p>
 
                 <div>
-                  <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i> Compra
-                  </a>
+
+                  <p>Preço- R$ 25.00</p>
+
+                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
                 </div>
               </li>
 
@@ -176,8 +196,13 @@
                 <h3>Guerra civil</h3>
                 <p>Stanley Martin Lieber</p>
 
-                <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Compra</a>
+                <div>
 
+                  <p>Preço- R$ 40.00</p>
+
+                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
+                </div>
               </li>
               <li>
                 <img src="/public/images/images (2).jpeg" alt="#">
@@ -186,12 +211,19 @@
 
                 <p>Stanley Martin Lieber</p>
 
-                <a href="#"> <i class="fa-solid fa-cart-shopping"></i> Compra</a>
+                <div>
+
+                  <p>Preço- R$ 10.00</p>
+
+                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
+                </div>
               </li>
             </Ul>
           </nav>
 
         </div>
+
 
 
       </section>

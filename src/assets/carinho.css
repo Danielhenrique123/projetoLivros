@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* garante que o padding e a borda sejam incluídos na largura total do elemento */
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;   /* Centraliza o conteúdo principal */
+  align-items: center;
+  position: relative;        /* Para posicionar o botão à esquerda */
+  padding: 20px 0;
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #00c3ff;
+  font-size: 40px;
+  padding: 20px 0px 20px 0;
+}
+
+.botao-voltar {
+  position: absolute;
+  left: 20px;
+  padding: 10px 16px;
+  font-size: 20px;
+  transform: rotate(180deg)
+}
+.botao-voltar i{
+  color: #00c3ff;
+  font-size: 30px;
+ padding:20px 0px 20px ;
+}
+
+.botao-voltar:hover {
+  text-decoration: underline;
+  color: #00c3ff;
+
+}
+
+.linha{
+  width: 100%; /* largura total */
+  height: 3.5px; /* altura da linha */
+  background-color: #00c3ff;
+}
+
+/*///////////////////////////////////////////////////////////////
+
+                Estilo do conteúdo principal
+
+/////////////////////////////////////////////////////////////////*/
+
+.carinho{
+  background-color:  #1e1e1e;
+  color: #00c3ff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);  /* sombra */
+  font-size: 20px;
+
+}
+.carinho h1{
+  font-size: 50px; /* tamanho da fonte */
+  font-weight: bold; /* negrito */
+  padding: 10vw 0 20px 5vw;
+}
+
+.linhaRegular{
+  width: 100%; /* largura total */
+  height: 3.5px; /* altura da linha */
+  background-color: #00c3ff;
+}
+.carinhoLista ul{
+
+display: flex;
+justify-content: left; /* espaçamento entre os itens */
+gap: 10vw; /* espaçamento entre os itens */
+list-style: none;
+padding: 90px 0 20px 5vw;
+font-size: 1.22vw;
+}
+/*///////////////////
+
+Estilo do carinho
+
+/////////////////////*/
+
+.produtos {
+  display: flex;
+  flex-direction: column; 
+  gap: 15px;
+  padding: 30px 5vw;
+  background-color: #1e1e1e;
+}
+.produto {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+.produto button {
+  padding: 5px 10px;
+  background-color: #00c3ff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: #1e1e1e;
+}
+.produto button:hover {
+  background-color: #00a0cc;
+}
+.carrinho-items {
+  padding: 20px 5vw;
+  color: #00c3ff;
+  background-color: #1e1e1e;
+  font-size: 1.1rem;
+}
+.carrinho-items ul {
+  list-style: none;
+  padding: 0;
+}
+.carrinho-items li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+.total {
+  font-weight: bold;
+  margin-top: 10px;
+}
