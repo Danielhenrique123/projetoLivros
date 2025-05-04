@@ -10,7 +10,7 @@
 
 
     <title>Muntiverso comics</title>
-    
+
   </head>
 
   <body>
@@ -34,7 +34,7 @@
           <li title="Equipes"><a href="#">Equipes </a></li>
           <li title="Envios"><a href="#">Envios</a></li>
           <li title="Devoluçoes"><a href="#">Devoluções</a></li>
-          <li><a href="http://127.0.0.1:5500/src/assets/carinho/carinho.html"><i
+          <li><a href="/src/assets/carinho/carinho.html"><i
                 class="fa-solid fa-cart-shopping"></i></a></li>
 
 
