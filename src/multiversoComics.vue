@@ -128,7 +128,7 @@
 
                   <p>Preço- R$ 15.50</p>
 
-                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  <button onclick="adicionarItem('invensivel')"> <i class="fa-solid fa-cart-shopping"></i> Compra
                   </button>
                 </div>
                 </div>
@@ -145,7 +145,7 @@
 
                   <p>Preço- R$ 15.50</p>
 
-                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  <button onclick="adicionarItem('guera civil')"> <i class="fa-solid fa-cart-shopping"></i> Compra
                   </button>
                 </div>
               </li>
@@ -160,7 +160,7 @@
 
                   <p>Preço- R$ 10.00</p>
 
-                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  <button onclick="adicionarItem('homen aranha')"> <i class="fa-solid fa-cart-shopping"></i> Compra
                   </button>
                 </div>
               </li>
@@ -174,49 +174,50 @@
 
             <ul class="ajuste">
 
-              <li>
-                <img src="/public/images/images.jpeg" alt="#" class="invencivel">
+              <li class="theboys">
+                <img src="/public/images/capa-v03.jpg" alt="#" class="invencivel">
 
-                <h3>Invencible</h3>
+                <h3>the boys vol.3</h3>
+
+                <p>Darick Robertson</p>
+
+                <div>
+
+                  <p>Preço- R$ 63.96</p>
+
+                  <button onclick="adicionarItem('the boys')"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
+                </div>
+              </li>
+
+
+
+              <li class="batman">
+                <img src="/public/images/Batman06Rebirth.jpg" alt="#">
+                <h3>batman</h3>
+                <p>Major Malcolm Wheeler-Nicholson</p>
+
+                <div>
+
+                  <p>Preço- R$ 50.00</p>
+
+                  <button onclick="adicionarItem('batman')"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  </button>
+                </div>
+              </li>
+
+              <li class="invensivel2">
+                <img src="/public/images/unnamed.jpg" alt="#">
+
+                <h3>Invencible vol.3</h3>
 
                 <p>Robert Kirkman</p>
 
                 <div>
 
-                  <p>Preço- R$ 25.00</p>
+                  <p>Preço- R$ 60.00</p>
 
-                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
-                  </button>
-                </div>
-              </li>
-
-
-
-              <li>
-                <img src="/public/images/images (1).jpeg" alt="#">
-                <h3>Guerra civil</h3>
-                <p>Stanley Martin Lieber</p>
-
-                <div>
-
-                  <p>Preço- R$ 40.00</p>
-
-                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
-                  </button>
-                </div>
-              </li>
-              <li>
-                <img src="/public/images/images (2).jpeg" alt="#">
-
-                <h3>Homem aranha</h3>
-
-                <p>Stanley Martin Lieber</p>
-
-                <div>
-
-                  <p>Preço- R$ 10.00</p>
-
-                  <button onclick="adicionarItem('Produto A', 10)"> <i class="fa-solid fa-cart-shopping"></i> Compra
+                  <button onclick="adicionarItem('invencivel 2')"> <i class="fa-solid fa-cart-shopping"></i> Compra
                   </button>
                 </div>
               </li>

@@ -161,7 +161,7 @@
             background-color:  #1e1e1e;
             color:  #1e1e1e;
           }
-<<<<<<< HEAD
+
          .apresentacao img{
          display: flex;
          text-align: right;
@@ -170,9 +170,9 @@
          justify-content: end;
          width: 250px;
           }
-=======
 
->>>>>>> 866d1d77e78db1a9a57511b7229787fe0fda418f
+
+
 
           /*////////////////////////
 
@@ -317,6 +317,35 @@
         font-size: 18px;
 
       }
+
+      .ajuste li.theboys {
+
+   
+
+        width:14rem
+
+
+
+
+      }
+
+      .ajuste li.batman {
+
+        width: 14rem;
+      }
+
+      .ajuste li.invensivel2 {
+
+
+        width: 14rem;
+
+
+      }
+
+
+
+
+
         /*////////////////////////
 
                   FOOTER
@@ -382,7 +411,5 @@
       color: #00c3ff;
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 866d1d77e78db1a9a57511b7229787fe0fda418f
+
